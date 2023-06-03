@@ -343,7 +343,7 @@ Sidebar
 =============== 
 */
 
-.sidebar {
+.sidebar{
   position: fixed;
   top: 0;
   left: 0;
@@ -353,21 +353,21 @@ Sidebar
   /* toggle */
   opacity: 0;
   visibility: hidden;
+
 }
-.show-sidebar {
+.show-sidebar{
   opacity: 1;
   visibility: visible;
   transition-property: opacity;
   transition-duration: 1s;
 }
-/* toggle class */
 
 .sidebar-container {
   padding: 4rem 2rem;
   position: relative;
 }
 
-.close-btn {
+.close-btn{
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
@@ -377,10 +377,13 @@ Sidebar
   right: 1rem;
   cursor: pointer;
 }
-.sidebar article {
+
+.sidebar article{
   margin-bottom: 2rem;
+
 }
-.sidebar h4 {
+
+.sidebar h4{
   margin-bottom: 1rem;
   color: var(--primary-700);
 }
@@ -396,17 +399,19 @@ Sidebar
   color: var(--grey-900);
   text-transform: capitalize;
   display: flex;
-  align-items: center;
   gap: 1rem;
 }
-.sidebar-sublinks svg {
+
+.sidebar-sublinks a svg{
   color: var(--grey-500);
 }
+
 @media screen and (min-width: 992px) {
-  .sidebar {
+  .sidebar{
     display: none;
   }
 }
+/* toggle class */
 
 /* 
 ============= 
