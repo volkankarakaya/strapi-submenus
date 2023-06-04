@@ -422,18 +422,17 @@ Nav Links
   display: none;
 }
 @media screen and (min-width: 992px) {
-  .nav-links {
+  .nav-links{
     display: flex;
     justify-content: center;
-
     align-self: stretch;
   }
-  .nav-center {
+  .nav-center{
     align-self: stretch;
     display: grid;
     grid-template-columns: auto 1fr;
   }
-  .nav-link {
+  .nav-link{
     padding: 0 1rem;
     color: var(--white);
     background: transparent;
@@ -444,49 +443,49 @@ Nav Links
     cursor: pointer;
   }
 }
-
 /* 
 ============= 
 Submenu
 =============== 
 */
-.submenu {
+.submenu{
   display: none;
 }
-@media screen and (min-width: 992px) {
-  .submenu {
+
+@media screen and (min-width: 992px){
+  .submenu{
     display: block;
     position: fixed;
-    top: 7rem;
+    top: 6rem;
     left: 50%;
     width: var(--fluid-width);
+    border-radius: var(--borderRadius);
     max-width: var(--max-width);
     background: var(--white);
     padding: 2rem;
     transform: rotateX(-90deg) translateX(-50%);
-    transform-origin: top;
+    transform-origin: top ;
     perspective: 1000px;
-    border-radius: var(--borderRadius);
     visibility: hidden;
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
     z-index: -1;
   }
-  .show-submenu {
+  .show-submenu{
     visibility: visible;
     opacity: 1;
-    transform: rotateX(0deg) translateX(-50%);
+    transform: rotateX(0) translateX(-50%);
     z-index: 10;
   }
-  .submenu h5 {
+  .submenu h5{
     margin-bottom: 1rem;
     color: var(--primary-700);
   }
-  .submenu-links {
+  .submenu-links{
     display: grid;
     row-gap: 0.5rem;
   }
-  .submenu-links a {
+  .submenu-links a{
     display: block;
     color: var(--grey-900);
     text-transform: capitalize;
@@ -494,7 +493,7 @@ Submenu
     align-items: center;
     gap: 1rem;
   }
-  .submenu-links svg {
-    color: var(--grey-500);
+  .submenu-links svg{
+    color: var(--grey-500)
   }
 }
